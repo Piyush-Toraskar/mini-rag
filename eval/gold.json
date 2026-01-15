@@ -1,0 +1,22 @@
+[
+  {
+    "q": "What are the requirements for the vector database in this assessment?",
+    "expected": "Use a hosted cloud vector DB and document the index/collection name, dimensionality, and upsert strategy."
+  },
+  {
+    "q": "What chunking strategy does the spec suggest as an example?",
+    "expected": "Chunks around 800\u20131,200 tokens with 10\u201315% overlap."
+  },
+  {
+    "q": "What is the required retrieval and reranking flow?",
+    "expected": "Top-k retrieval (MMR or similar) from the vector DB, then apply a reranker before answering."
+  },
+  {
+    "q": "List the acceptance criteria.",
+    "expected": "Working URL, query\u2192retrieved chunks\u2192reranked\u2192LLM answer with citations visible, and include a minimal eval with 5 Q/A pairs plus a short note on precision/recall or success rate."
+  },
+  {
+    "q": "What are the disqualifiers mentioned?",
+    "expected": "Broken/non-loading URL, missing README or index details; no working query flow; obvious plagiarism."
+  }
+]
